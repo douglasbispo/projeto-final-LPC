@@ -4,7 +4,6 @@ use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\{
     ImovelController,
-    UsuarioController,
 };
 
 Route::get('/', function () {
@@ -19,8 +18,3 @@ Route::get('/dashboard', [ImovelController::class, 'dashboard']);
 Route::get('/editar/{id}', [ImovelController::class, 'edit']);
 Route::put('/atualizar/{id}', [ImovelController::class, 'update']);
 Route::delete('/apagar/{id}', [ImovelController::class, 'destroy']);
-
-
-# User
-Route::get('/login', [UsuarioController::class, 'login']);
-Route::post('/signin', [UsuarioController::class, 'signin']);

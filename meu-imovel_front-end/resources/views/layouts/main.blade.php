@@ -70,7 +70,6 @@
                     </form>
 
                     <ul class="navbar-nav" id="button-dropdown">
-                        @auth
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 <i class="fa-solid fa-circle-user"></i>
@@ -101,9 +100,7 @@
                             </ul>
 
                         </li>
-                        @endauth
 
-                        @guest
                         <li class="nav-item">
                             <a class="nav-link" href="#">
                                 <i class="fa-solid fa-arrow-right-to-bracket"></i>
@@ -116,7 +113,6 @@
                                 Cadastro
                             </a>
                         </li>
-                        @endguest
                     </ul>
 
                 </div>
